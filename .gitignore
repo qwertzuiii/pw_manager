@@ -1,4 +1,5 @@
 
+.EXPORT/
 __pycache__/
 files/__pycache__/
 pytoexe.json
