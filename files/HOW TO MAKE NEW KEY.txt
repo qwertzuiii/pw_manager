@@ -1,0 +1,9 @@
+WARNING!
+REPLACING THE ".key" FILE WILL REMOVE YOUR PASSWORDS (PASSWORDS UNREADABLE)
+MAKE A BACKUP OF "pws.txt" (u can name it backup.pws.txt) [and if u want u can backup the ".key" file too]
+ AND CLEAR THE ORIGINAL pws.txt, TO GET NO ERRORS!
+~dream4sy
+
+1. EXECUTE GENERATE_NEW_KEY.EXE
+2. AFTER EXECUTION REMOVE THE ".key" FILE AND RENAME "NEW_KEY.key" to ".key"!
+3. CLEAR THE ORIGINAL "pws.txt" FILE, TO GET NO ERRORS! (make backups for "pws.txt" and ".key")

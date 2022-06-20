@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <!-- Load JS -->
+    <script src="../main.js"></script>
+    <link rel="stylesheet" href="../main.css">
+
+    <head>
+        <title>
+            PW_MANAGER | Add Account
+        </title>
+    </head>
+
+    <body>
+
+        <div id="loadHeader">
+            {{header}}    
+        </div>
+
+        <div id="MAINBODY-scenter"> <!--MAIN BODY-->
+
+            <center><br><br>
+                <form action="{{ url_for('accountscompleting') }}" method="post">
+                    <table border="0">
+                        <tr>
+                            <td id="addsite-padding" align="right">
+                                <font size="4" class="text">
+                                    Account Name:&nbsp;
+                                </font>
+                            </td>
+                            <td id="addsite-padding">
+                                <input type="text" name="getusername" class="input-text"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="addsite-padding" align="right">
+                                <font size="4" class="text">
+                                    Account Password:&nbsp;
+                                </font>
+                            </td>
+                            <td id="addsite-padding" >
+                                <input type="password" name="getpassword" class="input-text"></input> <a id="pw-btn" onclick="pw_click_eye()">Show</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2" align="center" id="addsite-padding">
+                                <button onclick="click_submit()" id="one-btn">Submit</button><br>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+
+        </div>
+
+        
+
+    </body>
