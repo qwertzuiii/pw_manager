@@ -6,4 +6,4 @@ Manage your Passwords easily!<br>
 Made with Flask (Python 3.9.x) as a web app
 <br><br>
 Preview:<br>
-<img src="https://user-images.githubusercontent.com/78412852/174606178-0f5a1fb4-5357-4f79-880f-975ee370a340.png" width=500>
+<img src="https://user-images.githubusercontent.com/78412852/174867492-4acf20c3-d023-4e94-8909-75a4ca990d53.png" width=700>
