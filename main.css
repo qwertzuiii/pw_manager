@@ -23,6 +23,9 @@
     
 }
 
+
+
+
 #header-logo {
     transition: all 0.5s;
     opacity: 50%;
@@ -45,6 +48,22 @@
 }
 .header-hr#h_hr2 {
     width: var(--width-hr2);
+}
+hr.acclist {
+    border: 0;
+    border-radius: 25px;
+    height: 3px;
+    opacity: 50%;
+    background-color: var(--header-hr-color);
+
+    width: 35vw;
+}
+.acclist#acc-tr {
+    width: 35vw;
+}
+
+#invisible-text {
+    display: none;
 }
 
 
@@ -95,12 +114,15 @@ h1#caption {
     color: var(--everytxt_color);
     font-family: var(--font-content);
     font-size: 0.5cm;
-    padding: 0.25ch;
+    /*padding: 0.25ch;*/
 }
 
 .table-pw {
     display: none;
 }
+
+
+
 
 /* BUTTONS */
 
@@ -144,6 +166,34 @@ h1#caption {
     padding-right: calc(var(--btn1_paddingside) + 10px);
 }
 
+#one-btn-submit { /*SUBMIT ONE*/
+    transition: all 0.5s;
+    outline: none;
+
+    --btn1_paddingside: 17.5px;
+    --btn1_paddingvert: 8px;
+    padding-left: var(--btn1_paddingside);
+    padding-right: var(--btn1_paddingside);
+    padding-top: var(--btn1_paddingvert);
+    padding-bottom: var(--btn1_paddingvert);
+
+    opacity: 75%;
+
+    font-size: 0.75cm;
+    font-family: var(--font-content);
+    border-radius: 100px;
+    border-width: 0px;
+    background-color: var(--btn1_bcolor);
+    color: var(--btn1_txtcolor);
+}
+#one-btn-submit:hover {
+    cursor: pointer;
+    /*background-color: var(--btn1_bcolor_hover);*/
+
+    opacity: 100%;
+    transform: scale(1.2, 1.2);
+}
+
 .copy-btn { /*COPY BUTTON*/
     transition: all 0.5s;
     outline: none;
@@ -169,6 +219,38 @@ h1#caption {
     padding-left: calc(var(--btn1_paddingside) + 2px);
     padding-right: calc(var(--btn1_paddingside) + 2px);
 }
+
+#plus-btn { /*PLUS ONE*/
+    transition: all 0.5s;
+    outline: none;
+
+    transform: scale(0.75, 0.75);
+    opacity: 0.75;
+
+    --btn1_paddingside: 17.5px;
+    --btn1_paddingvert: 8px;
+    padding-left: var(--btn1_paddingside);
+    padding-right: var(--btn1_paddingside);
+    padding-top: var(--btn1_paddingvert);
+    padding-bottom: var(--btn1_paddingvert);
+
+    font-size: 0.75cm;
+    font-family: var(--font-content);
+    border-radius: 100px;
+    border-width: 0px;
+    background-color: var(--btn1_bcolor);
+    color: var(--btn1_txtcolor);
+}
+#plus-btn:hover {
+    cursor: pointer;
+    background-color: var(--btn1_bcolor_hover);
+
+    transform: scale(1, 1);
+    opacity: 0.75;
+}
+
+
+
 
 /* ADD.HTML */
 
@@ -201,6 +283,9 @@ h1#caption {
 .input-text:hover, textarea {
     background-color: var(--input1_bcolor_hover);
 }
+
+
+
 
 /* DELETE.HTML */
 

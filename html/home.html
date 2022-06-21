@@ -26,18 +26,33 @@
 
                 <!--Table for Accounts-->
                 <table border="0">
-                    <tr align="center">
-                        <td class="table-top">Names/E-Mails</td>
-                        <td class="table-top">Passwords</td>
+                    <tr class="acclist" id="acc-tr">
+                        <td class="table-top" align=center>Names/E-Mails</td>
+                        <td class="table-top" align=center>Passwords</td>
                     </tr>
 
                     {% for username in users %}
                         <tr align="center"> <!--Content: USER|PW-->
-                            <td class="table-content"><hr>{{users[loop.index-1]}} <button class="copy-btn" id="copy_{{loop.index-1}}" onclick="copyclip('{{users[loop.index-1]}}')">COPY</button></td>
-                            <td class="table-content" id="{{loop.index-1}}"><hr><font id="hover_{{loop.index-1}}" onmouseover="pw_hover('{{loop.index-1}}')" onmouseout="pw_nohover('{{loop.index-1}}')">*hover*</font><font id="pw_{{loop.index-1}}" class="table-pw" onmouseover="pw_hover('{{loop.index-1}}')" onmouseout="pw_nohover('{{loop.index-1}}')">{{pws[loop.index-1]}}</font> <button class="copy-btn" id="copypw_{{loop.index-1}}" onclick="copyclip('{{pws[loop.index-1]}}')">COPY</button></td>
+                            <td class="table-content" width="40%">
+                                <hr class="acclist">
+                                {{users[loop.index-1]}}
+                                <button class="copy-btn" id="copy_{{loop.index-1}}" onclick="copyclip('{{users[loop.index-1]}}')">COPY</button>
+                            </td>
+                            <td class="table-content" id="{{loop.index-1}}" width="40%">
+                                <hr class="acclist">
+                                <font id="hover_{{loop.index-1}}" onmouseover="pw_hover('{{loop.index-1}}')" onmouseout="pw_nohover('{{loop.index-1}}')">
+                                    *hover*
+                                </font>
+                                <font id="pw_{{loop.index-1}}" class="table-pw" onmouseover="pw_hover('{{loop.index-1}}')" onmouseout="pw_nohover('{{loop.index-1}}')">
+                                    {{pws[loop.index-1]}}
+                                </font>
+                                <button class="copy-btn" id="copypw_{{loop.index-1}}" onclick="copyclip('{{pws[loop.index-1]}}')">COPY</button></td>
                         </tr>
                     {% endfor %}
                 </table>
+
+                <br><button id="plus-btn" onclick="click_add()">+</button>
+
             </center>
 
         </div>
