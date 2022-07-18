@@ -11,3 +11,4 @@ Preview:<br>
 ## How to edit source code
 Modules you need:
 - <pre><code>pip install <a href=https://flask.palletsprojects.com/>flask</a></code></pre>
+- <pre><code>pip install <a href=https://cryptography.io/en/latest/>cryptography</a></code></pre>
