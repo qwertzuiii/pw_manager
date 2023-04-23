@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/78412852/174607857-412165c9-cdcb-4134-98d5-ce137ccb9ac2.png" width=500>
 
 Manage your Passwords easily!<br>
-<a style='text-decoration: none;color:blue' hreF='https://github.com/stngo/pw_manager/releases/latest'>DOWNLOAD</a>
+<a style='text-decoration: none;color:blue' hreF='https://github.com/qwertzuiii/pw_manager/releases/latest'>DOWNLOAD</a>
 <br><br>
 Made with [Flask](https://flask.palletsprojects.com/en/2.1.x/) (Python 3.9.x) as a web app
 <br><br>
